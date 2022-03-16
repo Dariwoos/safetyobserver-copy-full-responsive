@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 20px;
+}
+img {
+  width: 100%;
+}
+:root {
+  --p-color: rgb(199, 194, 194);
+  --blue-button: rgb(64, 64, 255);
+}
+/* 
+####################
+Header-section 
+####################
+*/
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+/* ul.hidden */
+ul.hidden,
+button.signup,
+button.login {
+  display: none;
+}
+div.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: gray;
+  border-radius: 1rem 0 1rem 0;
+}
+div.circle {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: gray;
+  border-radius: 50%;
+}
+div.logos {
+  display: flex;
+}
+button.menu {
+  background: none;
+  color: inherit;
+  border: none;
+}
+button.carrito {
+  background: none;
+  color: inherit;
+  border: none;
+}
+/* 
+####################
+  Section-header
+####################
+
+  */
+section.about-header {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+section.about-header > h1 {
+  width: 100%;
+  height: 7rem;
+  font-size: 2rem;
+}
+section.about-header > p {
+  width: 70%;
+  color: var(--p-color);
+  margin-top: 2.5rem;
+}
+section.about-header > div {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+section.about-header > div > button.signup-sec {
+  width: 40%;
+  padding: 0.5rem;
+  background-color: var(--blue-button);
+  border: none;
+  color: white;
+}
+
+section.about-header > div > button.view {
+  width: 30%;
+  background-color: white;
+  color: var(--blue-button);
+  padding: 0.5rem;
+  border-color: var(--blue-button);
+}
+
+/* 
+####################
+  Scroll-section
+####################
+
+*/
+section.scroll-ul {
+  margin-bottom: 0.1rem;
+}
+section.scroll-ul > ul {
+  overflow: auto;
+  white-space: nowrap;
+  border: 0px 1px 0px 1px;
+  border-style: solid;
+}
+section.scroll-ul > ul > li {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+  margin-right: 0.3rem;
+}
+section.scroll-ul > ul > li::before {
+  content: '✔️';
+}
+/* 
+####################
+  Report-sectoion
+####################
+
+*/
+section.reports {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  padding: 1rem;
+}
+
+section.report {
+  padding-bottom: 1rem;
+}
+section.report > div:first-of-type {
+  margin: 0.5rem 0 0.5rem 0;
+  padding-right: 1rem;
+}
+section.report > div > h3 {
+  font-size: 2rem;
+  padding: 1rem 0 1rem 0;
+}
+section.report > div > p:first-of-type {
+  color: var(--p-color);
+}
+section.report > div > div.flex-div {
+  display: flex;
+}
+section.report > div > div.flex-div > p:last-child {
+  padding-left: 1rem;
+}
+section.report > div > button:first-of-type {
+  width: 40%;
+  background-color: var(--blue-button);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+}
+section.report > div > button:last-of-type {
+  width: 40%;
+  background-color: white;
+  color: var(--blue-button);
+  border: 0.5px solid var(--p-color);
+  padding: 0.5rem;
+}
+/* 
+####################
+  plans-section
+####################
+*/
+
+/* 
+################
+###first-plan
+################
+*/
+section.plans > section.first-plan {
+  display: flex;
+  flex-direction: column;
+  /*  width: 100%;
+  height: 100%; */
+  background-color: blue;
+  color: white;
+  padding: 1rem;
+}
+
+section.plans > section.first-plan > ul {
+  list-style: none;
+}
+section.plans > section.first-plan > ul > li::before {
+  content: '✔️';
+  padding-right: 1rem;
+}
+
+section.plans > section.first-plan > h3 {
+  margin: auto;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.first-plan > p {
+  margin: auto;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.first-plan > h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.first-plan {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section.plans > section.first-plan > button:first-of-type {
+  width: 40%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px 0 5px 0;
+  color: var(--blue-button);
+}
+section.plans > section.first-plan > button:last-of-type {
+  width: 30%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-color: white;
+  background-color: transparent;
+  border-radius: 3px 0 3px 0;
+  color: white;
+}
+
+/* 
+############################
+###last-plan################
+############################
+*/
+
+section.plans > section.second-plan {
+  display: flex;
+  flex-direction: column;
+  /*  width: 100%;
+  height: 100%; */
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+section.plans > section.second-plan > ul {
+  list-style: none;
+}
+section.plans > section.second-plan > ul > li::before {
+  content: '✔️';
+  padding-right: 1rem;
+}
+
+section.plans > section.second-plan > h3 {
+  margin: auto;
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.second-plan > p {
+  margin: auto;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.second-plan > h4 {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+section.plans > section.second-plan {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section.plans > section.second-plan > button:first-of-type {
+  width: 40%;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 5px 0 5px 0;
+  color: black;
+}
+section.plans > section.second-plan > button:last-of-type {
+  width: 30%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-color: white;
+  background-color: transparent;
+  border-radius: 3px 0 3px 0;
+  color: white;
+}
+/* 
+######################
+######footer##########
+######################
+*/
+footer > p:first-of-type {
+  padding: 1rem;
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer > p:nth-child(2) {
+  padding: 1rem;
+  width: 90%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--p-color);
+}
+footer > button {
+  width: 30%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  border-color: white;
+  background-color: transparent;
+  border-radius: 3px 0 3px 0;
+  color: black;
+  margin: 1rem;
+}
+
+footer > div.last-footer {
+  display: flex;
+  width: 100%;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid var(--p-color);
+}
+footer > div > p {
+  margin: auto;
+}
+
+/* 
+#######################
+  Media query Tablet
+#######################
+*/
+@media (min-width: 765px) {
+  section.about-header > div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  section.about-header > h1 {
+    width: 100%;
+    height: 100%;
+    font-size: 4rem;
+  }
+  section.about-header > p {
+    width: 70%;
+    color: var(--p-color);
+  }
+  section.scroll-ul > ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  section.report {
+    display: grid;
+    grid-template:
+      'foto gri .'
+      '. . .'
+      '. btn .';
+  }
+  section.report > div.links {
+    grid-area: link;
+  }
+  section.report img {
+    height: 100%;
+    width: 100%;
+  }
+  section.report > div.grid-div {
+    grid-area: gri;
+    margin: 10px;
+  }
+  section.plans {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1025px) {
+  ul.hidden {
+    display: flex;
+    list-style: none;
+  }
+  ul.hidden > li {
+    margin-right: 2rem;
+  }
+  button.menu {
+    display: none;
+  }
+}
